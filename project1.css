@@ -53,10 +53,9 @@ article {
 }
 
 #Start {
-  top: 530px;
-  left: 150px;
+  top: 450px;
+  left: 120px;
 }
-
 
 #TheVillage {
   left: 180px;
@@ -74,13 +73,13 @@ article {
 }
 
 #TheShadows {
-  left: 340px;
-  bottom: 250px;
+  left: 350px;
+  bottom: 200px;
 }
 
 #Cabin {
-  top: 500px;
-  left: 1100px;
+  top: 400px;
+  left: 1000px;
 }
 
 #BigField {
@@ -94,8 +93,8 @@ article {
 }
 
 #InnerMountain{
-  left: 450px;
-  bottom: 400px;
+  left: 420px;
+  bottom: 380px;
 }
 
 #MountainTop{
@@ -103,10 +102,6 @@ article {
   bottom: 550px;
 }
 
-/* #Lives {
-  right: 100px;
-  bottom: 650px;
-} */
 
 /*timer*/
 #timer {
@@ -129,6 +124,12 @@ article {
 
 
 /*Creating the lives*/
+ul {
+  display: inline-block;
+  float: right;
+  margin: 10px;
+}
+
 .life {
     position: absolute;
     background-position: 0px 0px;
@@ -154,7 +155,7 @@ article {
     width:100%;
     height:100%;
     display:none;
-    position:fixed;
+    position:fixed  ;
     top:0px;
     left:0px;
     background:rgba(0,0,0,.75);

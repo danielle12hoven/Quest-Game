@@ -36,7 +36,7 @@ var stoppingStations = [
 ];
 
 
-var intervalTime = 1000;
+var intervalTime = 2000;
 var intervalTime2 = 50000;
 var intervalTime3 = 3000;
 var delay = null;
@@ -46,7 +46,7 @@ var lives = ['life1', 'life2', 'life3']
 
 var removeLife = function(){
   $('#'+lives[0]).remove();
-  lives.shift()
+  lives.shift();
 }
 
 
@@ -76,7 +76,7 @@ var movePlayer1 = function(){
 var movePlayer2 = function(){
   $('#TheVillage').append($("#playerOne"));
     $('#textBox').text("You have entered the village.");
-    delay = setTimeout(movePlayer3, intervalTime3);
+    delay = setTimeout(movePlayer3, intervalTime);
 }
 
 
@@ -85,18 +85,20 @@ var movePlayer3 = function(){
   var prompt1 = prompt("I have a tail, and I have a head, but I have no body. I am NOT a snake. What am I?");
     console.log(prompt1);
 
+      // $('[data-popup="popup-3"]').fadeIn(350);
+
       if(prompt1 === 'a coin'){
         $('#textBox').text("You are correct. Move on.");
         $('#Outpost').append($('#playerOne'));
-        $('#textBox').text("You are now headed on to the Outpost.");
+        $('#textBox').text("Onwards!");
            delay = setTimeout(movePlayer4, intervalTime3);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
-            if(lives === []){
+            if(lives.length === 0){
               alert("Game over");
             }else {
-          delay = setTimeout(movePlayer3, intervalTime3);
+          delay = setTimeout(movePlayer3, intervalTime);
       }
     }
   }
@@ -110,12 +112,12 @@ var movePlayer4 = function(){
       if(prompt2 === 'mary'){
         $('#textBox').text("You are correct. Move on.");
         $('#Behind').append($("#playerOne"));
+        $('#textBox').text("The questions will keep getting harder.");
           delay = setTimeout(movePlayer5, intervalTime3);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
-          debugger;
-            if(lives.empty() === true){
+            if(lives.length === 0){
               alert("Game over");
             }else {
            delay = setTimeout(movePlayer4, intervalTime3);
@@ -129,12 +131,12 @@ var movePlayer5 = function(){
 
       if(prompt3 === 'firetruck'){
         $('#textBox').text("You are correct. Move on.");
-        $('#HorseField').append($("#playerOne"));
+        $('#BigField').append($("#playerOne"));
           delay = setTimeout(movePlayer6, intervalTime3);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
-            if(lives === []){
+            if(lives.length === 0){
               alert("Game over");
             }else {
             delay = setTimeout(movePlayer5, intervalTime3);
@@ -146,15 +148,21 @@ var movePlayer6 = function(){
   var prompt4 = prompt("What crosses the river but doesn't move?")
     console.log(prompt4);
 
-        if(prompt4 === 'a bridge'){
-          $('#textBox').text("You are correct. Move on.");
-          $('#TheShadows').append($("#playerOne"));
-            delay = setTimeout(movePlayer7, intervalTime3);
-        } else {
-          $('#textBox').text("Wrong answer. You just lost a life");
+      if(prompt4 === 'a bridge'){
+        $('#textBox').text("You are correct. Move on.");
+        $('#TheShadows').append($("#playerOne"));
+        $('#textBox').text("Watch out, you are entering the shadows.");
+          delay = setTimeout(movePlayer7, intervalTime3);
+      } else {
+        $('#textBox').text("Wrong answer. You just lost a life");
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer6, intervalTime3);
         }
-}
+      }
+  }
 
 var movePlayer7 = function(){
   var prompt5 = prompt("What begins with T, ends with T and has T in it?")
@@ -163,11 +171,17 @@ var movePlayer7 = function(){
       if(prompt5 === 'a teapot'){
         $('#textBox').text("You are correct. Move on.");
         $('#Cabin').append($("#playerOne"));
+        $('#textBox').text("Walk up to the cabin and solve the next question.");
           delay = setTimeout(movePlayer8, intervalTime3);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life");
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer7, intervalTime3);
       }
+    }
 }
 
 var movePlayer8 = function(){
@@ -177,12 +191,18 @@ var movePlayer8 = function(){
       if(prompt6 === 'wednesday'){
         $('#textBox').text("You are correct. Move on.");
         $('#Cave').append($("#playerOne"));
+        $('#textBox').text("You walk into the cave...");
           delay = setTimeout(movePlayer9, intervalTime3);
         } else {
         $('#textBox').text("Wrong answer. You just lost a life");
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer8, intervalTime3)
         }
-}
+      }
+  }
 
 var movePlayer9 = function(){
   var prompt7 = prompt("What pine has the longest and sharpest needles?")
@@ -191,11 +211,17 @@ var movePlayer9 = function(){
       if(prompt7 === 'a porqupine'){
         $('#textBox').text("You are correct. Move on.");
         $('#InnerMountain').append($("#playerOne"));
+        $('#textBox').text("You are now inside the mountain, to head up solve the riddle");
           delay = setTimeout(movePlayer10, intervalTime3);
         } else {
         $('#textBox').text("Wrong answer. You just lost a life");
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer9, intervalTime3)
         }
+      }
 }
 
 var movePlayer10 = function(){
@@ -205,11 +231,17 @@ var movePlayer10 = function(){
       if(prompt8 === '5'){
         $('#textBox').text("You are correct. Move on.");
         $('#MountainTop').append($("#playerOne"));
+          $('#textBox').text("Almost at the top!");
           delay = setTimeout(movePlayer11, intervalTime3);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life")
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer10, intervalTime3)
         }
+      }
 }
 
 var movePlayer11 = function(){
@@ -221,9 +253,13 @@ var movePlayer11 = function(){
         $('[data-popup="popup-2"]').fadeIn(350);
       } else {
         $('#textBox').text("Wrong answer. You just lost a life");
+            removeLife();
+            if(lives.length === 0){
+              alert("Game over");
+            }else {
           delay = setTimeout(movePlayer11, intervalTime)
         }
-    // movePlayer1();
+      }
 }
 
 createPoints();

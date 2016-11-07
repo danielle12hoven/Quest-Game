@@ -12,50 +12,55 @@
 
 <body>
 
+
+  <div id='gameBoard'>
+
 <!-- Life lists -->
-<ul id='allLives'>
- <li class='lifeList' id='life1'></li>
-  <li class='lifeList' id='life2'></li>
-  <li class='lifeList' id='life3'></li>
+  <ul id='allLives'>
+    <p>Lives</p>
+    <li class='lifeList' id='life1'></li>
+    <li class='lifeList' id='life2'></li>
+    <li class='lifeList' id='life3'></li>
   </ul>
  <!-- Life lists -->
 
+  <div class='players' id='playerOne'></div>
 
-
-  <div id='gameBoard'>
-    <div class='players' id='playerOne'></div>
   </div>
 
   <div id='textBox'></div>
 
-  <span id="timer"></span>
-
   <script src="project1jquery.js"></script>
-  <script type="text/javascript" src="project1arrays.js"></script>
-  <script type="text/javascript" src="project1.js"></script>
+<!--   <script type="text/javascript" src="project1arrays.js"></script>
+ -->  <script type="text/javascript" src="project1.js"></script>
 
 
   <div class="popup" id="popup1" data-popup="popup-1">
       <div class="popup-inner">
           <h2>Quest</h2>
-          <p>Welcome player. It is your goal to complete this quest.</p>
-          <p>As you move from station to station you will be asked to solve riddles.</p>
-          <p>If you answer all correctly, you will win a prize. But if you answer incorrectly. You will lose a life...</p>
-          <p>May good fortune be on your side.</p>
-<!--           <a class="popup=close" data-popup-close="popup-1" href="#">Close</a></p>
- -->          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+            <p>Welcome.</p>
+            <p>As you move from station to station you will be asked to solve riddles.</p>
+            <p>If you answer all correctly, you will win a prize. But if you answer incorrectly. You will lose a life...</p>
+            <p>May good fortune be on your side.</p>
+          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
       </div>
   </div>
 
   <div class="popup" id="popup2" data-popup="popup-2">
       <div class="popup-inner">
           <h2>Congratulations!</h2>
-          <p>If you made it this far it means you are a serious badass.</p>
-          <p>Now go flaunt your skills out in the real world.</p>
-<!--           <p><a class="popup-close" data-popup-close="popup-2" href="#">Close</a></p>
- -->          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+            <p>If you made it this far it means you are a serious badass.</p>
+            <p>Now go flaunt your skills out in the real world.</p>
+          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
       </div>
   </div>
+
+<!--   <div class="popup" id="popup3" data-popup="popup-3">
+    <div class="popup-inner">
+          <h1>Game Over</h1>
+        <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
+    </div>
+  </div> -->
 
 </body>
 
@@ -68,9 +73,6 @@
     <button onclick="submitInfo()">Submit</button>
   </form> -->
 <!-- TEXT BOX alternative to the prompt -->
-
-
-
 
 
 

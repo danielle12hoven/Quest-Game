@@ -85,3 +85,6 @@ or instead of dice make them prompts with questions that need to be answered to 
 - if you get the question wrong then you go back to the start
 - each spot has a question that will need to be answered
 - but math random may let you skip that spot
+
+
+

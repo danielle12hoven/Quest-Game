@@ -96,7 +96,7 @@ var movePlayer3 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
           delay = setTimeout(movePlayer3, intervalTime);
       }
@@ -118,9 +118,9 @@ var movePlayer4 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-           delay = setTimeout(movePlayer4, intervalTime3);
+           delay = setTimeout(movePlayer4, intervalTime);
       }
     }
   }
@@ -137,9 +137,9 @@ var movePlayer5 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
           removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-            delay = setTimeout(movePlayer5, intervalTime3);
+            delay = setTimeout(movePlayer5, intervalTime);
         }
       }
   }
@@ -157,9 +157,9 @@ var movePlayer6 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-          delay = setTimeout(movePlayer6, intervalTime3);
+          delay = setTimeout(movePlayer6, intervalTime);
         }
       }
   }
@@ -177,9 +177,9 @@ var movePlayer7 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-          delay = setTimeout(movePlayer7, intervalTime3);
+          delay = setTimeout(movePlayer7, intervalTime);
       }
     }
 }
@@ -197,9 +197,9 @@ var movePlayer8 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-          delay = setTimeout(movePlayer8, intervalTime3)
+          delay = setTimeout(movePlayer8, intervalTime)
         }
       }
   }
@@ -217,9 +217,9 @@ var movePlayer9 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-          delay = setTimeout(movePlayer9, intervalTime3)
+          delay = setTimeout(movePlayer9, intervalTime)
         }
       }
 }
@@ -237,9 +237,9 @@ var movePlayer10 = function(){
         $('#textBox').text("Wrong answer. You just lost a life")
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
-          delay = setTimeout(movePlayer10, intervalTime3)
+          delay = setTimeout(movePlayer10, intervalTime)
         }
       }
 }
@@ -255,7 +255,7 @@ var movePlayer11 = function(){
         $('#textBox').text("Wrong answer. You just lost a life");
             removeLife();
             if(lives.length === 0){
-              alert("Game over");
+              $('[data-popup="popup-3"]').fadeIn(350);
             }else {
           delay = setTimeout(movePlayer11, intervalTime)
         }

@@ -211,7 +211,7 @@ var movePlayer9 = function(){
       if(prompt7 === 'a porqupine'){
         $('#textBox').text("You are correct. Move on.");
         $('#InnerMountain').append($("#playerOne"));
-        $('#textBox').text("You are now inside the mountain, to head up solve the riddle");
+        $('#textBox').text("You are now inside the mountain, solve next the riddle");
           delay = setTimeout(movePlayer10, intervalTime3);
         } else {
         $('#textBox').text("Wrong answer. You just lost a life");

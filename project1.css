@@ -2,8 +2,8 @@
   position: relative;
   border: 10px solid white;
   width: 1200px;
-  height: 600px;
-  background: url("backgroundMap.jpg");
+  height: 750px;
+  background: url("backgroundMap.jpg") no-repeat;
   margin-right: auto;
   margin-left: auto;
   margin-top: 5%;
@@ -11,14 +11,19 @@
 
 #textBox{
   position: absolute;
-  border: 10px solid white;
+/*   border: 10px solid white;
+ */
+  border-top: 10px solid white;
+  bottom: 0;
   width: 1200px;
   height: 90px;
   text-align: center;
-  margin-right: auto;
+  margin: 0 auto;
+  /* margin-right: auto;
   margin-left: 73px;
-  margin-top: -10px;
+  margin-top: -10px; */
   color: white;
+  background-color: black;
   font-size: 50px;
 }
 
@@ -53,53 +58,53 @@ article {
 }
 
 #Start {
-  top: 450px;
+  top: 480px;
   left: 120px;
 }
 
 #TheVillage {
-  left: 180px;
-  bottom: 380px;
+  left: 100px;
+  bottom: 500px;
 }
 
 #Outpost {
   left: 180px;
-  bottom: 550px;
+  bottom: 700px;
 }
 
 #Behind {
-  left: 650px;
-  bottom: 500px;
+  left: 680px;
+  bottom: 650px;
 }
 
 #TheShadows {
-  left: 350px;
-  bottom: 200px;
+  left: 300px;
+  bottom: 350px;
 }
 
 #Cabin {
   top: 400px;
-  left: 1000px;
+  left: 1100px;
 }
 
 #BigField {
-  bottom: 250px;
-  left: 800px;
+  left: 740px;
+  bottom: 300px;
 }
 
 #Cave {
-  bottom: 450px;
-  left: 850px;
+  left: 860px;
+  bottom: 500px;
 }
 
 #InnerMountain{
   left: 420px;
-  bottom: 380px;
+  bottom: 500px;
 }
 
 #MountainTop{
-  left: 430px;
-  bottom: 550px;
+  left: 400px;
+  bottom: 700px;
 }
 
 

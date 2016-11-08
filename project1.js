@@ -4,22 +4,6 @@ $(document).ready(function(){
 
   console.log("party time");
 
-//Dialog boxes//
-    //----- OPEN
-  console.log($('[data-popup-open]'));
-    $('[data-popup-open]').on('click', function(e)  {
-        var targetedPopup = $(this).attr('data-popup-open');
-        $('[data-popup="' + targetedPopup + '"]').fadeIn(350);
-    });
-    //----- CLOSE
-    console.log($('[data-popup-close]'));
-    $('[data-popup-close]').on('click', function(e)  {
-        var targetedPopup = $(this).attr('data-popup-close');
-        $('[data-popup="' + targetedPopup + '"]').fadeOut(350);
-    });
-//end of dialog box//
-
-
 
 var stoppingStations = [
   'Start',
@@ -48,6 +32,22 @@ var removeLife = function(){
   $('#'+lives[0]).remove();
   lives.shift();
 }
+
+
+//Dialog boxes//
+    //----- OPEN
+  console.log($('[data-popup-open]'));
+    $('[data-popup-open]').on('click', function(e)  {
+        var targetedPopup = $(this).attr('data-popup-open');
+        $('[data-popup="' + targetedPopup + '"]').fadeIn(350);
+    });
+    //----- CLOSE
+  console.log($('[data-popup-close]'));
+    $('[data-popup-close]').on('click', function(e)  {
+        var targetedPopup = $(this).attr('data-popup-close');
+        $('[data-popup="' + targetedPopup + '"]').fadeOut(350);
+    });
+//end of dialog box//
 
 
 //Making each stopping point in the game//

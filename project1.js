@@ -87,7 +87,7 @@ var movePlayer3 = function(){
 
       // $('[data-popup="popup-3"]').fadeIn(350);
 
-      if(prompt1 === 'a coin'){
+      if(prompt1.toLowerCase() === 'coin'){
         $('#textBox').text("You are correct. Move on.");
         $('#Outpost').append($('#playerOne'));
         $('#textBox').text("Onwards!");
@@ -109,7 +109,7 @@ var movePlayer4 = function(){
   var prompt2 = prompt("Mary's father has 4 children; three are named Nana, Nene, and Nini. So what is the 4th child's name?");
     console.log(prompt2);
 
-      if(prompt2 === 'mary'){
+      if(prompt2.toLowerCase() === 'mary'){
         $('#textBox').text("You are correct. Move on.");
         $('#Behind').append($("#playerOne"));
         $('#textBox').text("The questions will keep getting harder.");
@@ -129,7 +129,7 @@ var movePlayer5 = function(){
   var prompt3 = prompt("What starts with F and ends in uck?");
     console.log(prompt3);
 
-      if(prompt3 === 'firetruck'){
+      if(prompt3.toLowerCase() === 'firetruck'){
         $('#textBox').text("You are correct. Move on.");
         $('#BigField').append($("#playerOne"));
           delay = setTimeout(movePlayer6, intervalTime3);
@@ -148,7 +148,7 @@ var movePlayer6 = function(){
   var prompt4 = prompt("What crosses the river but doesn't move?")
     console.log(prompt4);
 
-      if(prompt4 === 'a bridge'){
+      if(prompt4.toLowerCase() === 'bridge'){
         $('#textBox').text("You are correct. Move on.");
         $('#TheShadows').append($("#playerOne"));
         $('#textBox').text("Watch out, you are entering the shadows.");
@@ -168,7 +168,7 @@ var movePlayer7 = function(){
   var prompt5 = prompt("What begins with T, ends with T and has T in it?")
     console.log(prompt5);
 
-      if(prompt5 === 'a teapot'){
+      if(prompt5.toLowerCase() === 'teapot'){
         $('#textBox').text("You are correct. Move on.");
         $('#Cabin').append($("#playerOne"));
         $('#textBox').text("Walk up to the cabin and solve the next question.");
@@ -188,7 +188,7 @@ var movePlayer8 = function(){
   var prompt6 = prompt("Wednesday, Tom and Joe went to a restaurant and ate dinner. When they were done they paid for the food and left. But Tom and Joe didn't pay for the food. Who did?")
     console.log(prompt6);
 
-      if(prompt6 === 'wednesday'){
+      if(prompt6.toLowerCase() === 'wednesday'){
         $('#textBox').text("You are correct. Move on.");
         $('#Cave').append($("#playerOne"));
         $('#textBox').text("You walk into the cave...");
@@ -208,7 +208,7 @@ var movePlayer9 = function(){
   var prompt7 = prompt("What pine has the longest and sharpest needles?")
     console.log(prompt7);
 
-      if(prompt7 === 'a porqupine'){
+      if(prompt7.toLowerCase() === 'porqupine'){
         $('#textBox').text("You are correct. Move on.");
         $('#InnerMountain').append($("#playerOne"));
         $('#textBox').text("You are now inside the mountain, solve next the riddle");
@@ -248,7 +248,7 @@ var movePlayer11 = function(){
   var prompt9 = prompt("I travel all over the world, but always stay in my corner. What am I?")
     console.log(prompt9);
 
-      if(prompt9 === 'a stamp'){
+      if(prompt9.toLowerCase() === 'stamp'){
         $('#textBox').text("You have won!!");
         $('[data-popup="popup-2"]').fadeIn(350);
       } else {
